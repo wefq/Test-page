@@ -23,6 +23,7 @@ btnsMap.addEventListener('click', e=>{
   const targetIndex = btns.findIndex(btn => btn === targetBtn)
   const targetSlide = slides[targetIndex]
 
+
   slider.style.transform = 'translateX(-' + targetSlide.style.left + ')';
   currentSlide.classList.remove('current-slide');
   targetSlide.classList.add('current-slide')

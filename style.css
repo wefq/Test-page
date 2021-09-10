@@ -9,7 +9,8 @@
 
 body {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 h2 {
@@ -24,7 +25,7 @@ p {
   font-size: 15px;
 }
 
-.headline::after{
+.headline::after {
   content: '';
   display: inline-block;
   width: 80px;
@@ -35,31 +36,32 @@ p {
 .wrapper {
   display: grid;
   grid-gap: 48px;
+  width: 1242px;
+}
 
-  width: 1214px;
+.track {
+  height: 460px;
+  width: inherit;
+  display: flex;
+  justify-content: center;
+  position: relative;
   overflow: hidden;
 }
 
 .slider {
-  height: 460px;
   display: flex;
-  justify-content: center;
-  
-  transition: transform 500ms ease-in;
+  grid-gap: 30px;
+  height: 100%;
   position: relative;
-}
-
-.slide {
-  display: flex;
-  grid-gap: 1em;
-  
-  position: absolute;
+  transition: transform 500ms ease-in;
+  left: 394px;
 }
 
 .review-card {
   width: 394px;
   height: 460px;
   background-color: #FAFAFA;
+  box-shadow: 0px 20px 60px rgba(59, 61, 72, 0.1);
 }
 
 .review-card img {
@@ -92,20 +94,53 @@ p {
 }
 
 .map {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-areas: 'btn btn btn';
+  width: 144px;
+  grid-gap: 42px;
+  margin-left: auto;
+  margin-right: auto;
+ 
 }
 
 .btn {
+  
   width: 20px;
   height: 20px;
   border: 3px solid #D1D7DC;
   border-radius: 50%;
-  margin-left: 42px;
   cursor: pointer;
 }
 
 .btn_active {
   background: #3951D2;
   border: 1px solid #3951D2;
+}
+
+@media(max-width: 1200px) {
+  .wrapper {
+    width: 970px;
+  }
+}
+
+@media(max-width: 992px) {
+  .wrapper {
+    width: 750px;
+  }  
+}
+
+@media(max-width: 992px) {
+  .wrapper {
+    width: 750px;
+  }
+
+}
+
+@media(max-width: 767px) {
+  .wrapper {
+    width: 370px;
+  }
+  .slider {
+    grid-gap: 0;
+  }
 }
