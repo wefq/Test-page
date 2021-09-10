@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Jost', sans-serif;
+  color: #454F5B;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 15px;
+}
+
+.headline::after{
+  content: '';
+  display: inline-block;
+  width: 80px;
+  height: 2px;
+  background-color: #3951D2;
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 48px;
+
+  width: 1214px;
+  overflow: hidden;
+}
+
+.slider {
+  height: 460px;
+  display: flex;
+  justify-content: center;
+  
+  transition: transform 500ms ease-in;
+  position: relative;
+}
+
+.slide {
+  display: flex;
+  grid-gap: 1em;
+  
+  position: absolute;
+}
+
+.review-card {
+  width: 394px;
+  height: 460px;
+  background-color: #FAFAFA;
+}
+
+.review-card img {
+  width: 120px;
+}
+
+.review-card_head {
+  display: flex;
+  align-items: center;
+  background-color: #EEF1F4
+}
+
+.review-card_head_text {
+  margin-left: 20px;
+}
+
+.review-card_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: 300px;
+  padding: 24px;
+}
+
+.review-card a {
+  text-decoration: none;
+  color: #A2B6C8;
+  font-size: 18px;
+}
+
+.map {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  width: 20px;
+  height: 20px;
+  border: 3px solid #D1D7DC;
+  border-radius: 50%;
+  margin-left: 42px;
+  cursor: pointer;
+}
+
+.btn_active {
+  background: #3951D2;
+  border: 1px solid #3951D2;
+}
