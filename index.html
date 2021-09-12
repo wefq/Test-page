@@ -5,219 +5,123 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Test</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./styles/global.css">
+  <title>Document</title>
 </head>
 
 <body>
-  <div class='wrapper'>
 
-    <div class='headline'>
-      <h2>Отзывы клиентов</h2>
+  <header>
+    <nav class='menu'>
+
+      <div class='default-menu'>
+        <a class='link link__navigation' href='#'>Пункт 1</a>
+        <a class='link link__navigation' href='#'>Пункт 2</a>
+        <a class='link link__navigation' href='#'>Пункт 3</a>
+      </div>
+
+      <div class='drop-menu'>
+        <button class='drop-menu_btn'>
+          <img src='./images/menu_btn.png' alt='btn'>
+        </button>
+        <div class='drop-menu_content'>
+          <a class='link link__navigation' href='#'>Пункт 1</a>
+          <a class='link link__navigation' href='#'>Пункт 2</a>
+          <a class='link link__navigation' href='#'>Пункт 3</a>
+          <a class='link link__navigation' href='#'>Пункт 4</a>
+        </div>
+      </div>
+
+    </nav>
+
+    <h1 class='logo'>ЛОГО</h1>
+
+    <a class='default-menu_part link link__navigation' href='#'>Пункт 4</a>
+
+    <div class='profile'>
+
+      <a class='link link__contacts link__contacts__phone' href="tel:+8005553535">8 800 555 35 35</a>
+
+      <img src="./images/ic_profile.png" alt="">
+
+    </div>
+  </header>
+
+  <section class='section-first'>
+
+    <div class='section-first_headline'>
+
+      <h1>Большой главный заголовок</h1>
+      <h2>Большой главный заголовок</h2>
+      <h3>Большой главный заголовок</h3>
+
+      <p>Разнообразный и богатый опыт начало повседневной работы по формированию позиции позволяет выполнять важные
+        задания.</p>
+
     </div>
 
-    <div class='track'>
-      <div class='slider'>
+    <form class='section-first_form'>
 
-        <div class='review-card current-slide '>
-          <div class='review-card_head'>
-            <img src='./images/img.jpg' alt='img' />
-            <div class='review-card_head_text'>
-              <h3>Просто дали начать снова жить!</h3>
-            </div>
-          </div>
+      <label>Регион</label><br>
+      <input class='region' type='text'><br>
 
-          <div class='review-card_content'>
-            <p>Мне порекомендовала обратиться в компанию коллега еще год назад. Сначала даже не поверила, что избавиться
-              от
-              долгов можно так легко.
-              Решила даже позвонить в другие конторы, однако самым выгодным и адекватным вариантом стал тот, который
-              посоветовала знакомая.
-              Меня порадовала, что компания сама собирает пакет документов, оформляет все за считанные дни.
-              Фирма быстро избавила меня от долгов, и я смогла спокойно жить, работать без звонков коллекторов и
-              нервотрепки.
-            </p>
-            <a href='/profile/Marina_Ivanova'>Марина Иванова</a>
-          </div>
+      <label>Выбор:</label><br>
+
+      <div class='section-first_form_options'>
+        <div class='checkboxes'>
+          <label class='check'>Выбор 1
+            <input type='checkbox'>
+            <span class="checkmark"></span>
+          </label>
+
+
+          <label class='check'>Выбор 2
+            <input type='checkbox'>
+            <span class="checkmark"></span>
+          </label>
+        </div>
+        <div>
+          <label class='switch'>
+            <input type='checkbox'>
+            <span class='switch_toggle'></span>
+          </label>
+          <span class='sss'> Выбор 3</span>
         </div>
 
-        <div class='review-card '>
-          <div class='review-card_head'>
-            <img src='./images/img (1).jpg' alt='img' />
-            <div class='review-card_head_text'>
-              <h3>Всем советую!</h3>
-            </div>
-          </div>
-
-          <div class='review-card_content'>
-            <p>Спасибо большое компании по списанию долгов. Процедура прошла законно, прозрачно, легально. В свое время,
-              я
-              брал кредит на собственное дело, но бизнес не пошел и не поехал, а вот долги стали копиться моментально.
-              Естественно, что коллекторы и проблемы не заставили себя ждать. Поэтому и решил обратиться за
-              банкротством,
-              и затем был приятно удивлен, что мне быстро помогли с долгами.
-            </p>
-            <a href='/profile/Sergey_Ivanov'>Сергей Иванов</a>
-          </div>
-        </div>
-
-        <div class='review-card'>
-          <div class='review-card_head'>
-            <img src='./images/img (2).jpg' alt='img' />
-            <div class='review-card_head_text'>
-              <h3>Проверенная фирма.</h3>
-            </div>
-          </div>
-
-          <div class='review-card_content'>
-            <p>Отвечаю за то, что говорю. Я сам успешно списал долги, а затем посоветовал знакомым, попавшим в тяжелую
-              жизненную ситуацию, тоже обратиться в эту же компанию. Помогли и мне, и моим друзьям. Естественно, как
-              камень с плеч!
-            </p>
-            <a href='/profile/Ivan_Ivanova'>Иван Иванов</a>
-          </div>
-        </div>
-
-        <!-- <div class='slide'>
-
-        <div class='review-card'>
-          <div class='review-card_head'>
-            <img src='./images/img (1).jpg' alt='img' />
-            <div class='review-card_head_text'>
-              <h3>Всем советую!</h3>
-            </div>
-          </div>
-
-          <div class='review-card_content'>
-            <p>Спасибо большое компании по списанию долгов. Процедура прошла законно, прозрачно, легально. В свое время,
-              я
-              брал кредит на собственное дело, но бизнес не пошел и не поехал, а вот долги стали копиться моментально.
-              Естественно, что коллекторы и проблемы не заставили себя ждать. Поэтому и решил обратиться за
-              банкротством,
-              и затем был приятно удивлен, что мне быстро помогли с долгами.
-            </p>
-            <a href='/profile/Sergey_Ivanov'>Сергей Иванов</a>
-          </div>
-        </div>
-
-        <div class='review-card'>
-          <div class='review-card_head'>
-            <img src='./images/img (2).jpg' alt='img' />
-            <div class='review-card_head_text'>
-              <h3>Проверенная фирма.</h3>
-            </div>
-          </div>
-
-          <div class='review-card_content'>
-            <p>Отвечаю за то, что говорю. Я сам успешно списал долги, а затем посоветовал знакомым, попавшим в тяжелую
-              жизненную ситуацию, тоже обратиться в эту же компанию. Помогли и мне, и моим друзьям. Естественно, как
-              камень с плеч!
-            </p>
-            <a href='/profile/Ivan_Ivanova'>Иван Иванов</a>
-          </div>
-        </div>
-
-        <div class='review-card'>
-          <div class='review-card_head'>
-            <img src='./images/img.jpg' alt='img' />
-            <div class='review-card_head_text'>
-              <h3>Просто дали начать снова жить!</h3>
-            </div>
-          </div>
-
-          <div class='review-card_content'>
-            <p>Мне порекомендовала обратиться в компанию коллега еще год назад. Сначала даже не поверила, что избавиться
-              от
-              долгов можно так легко.
-              Решила даже позвонить в другие конторы, однако самым выгодным и адекватным вариантом стал тот, который
-              посоветовала знакомая.
-              Меня порадовала, что компания сама собирает пакет документов, оформляет все за считанные дни.
-              Фирма быстро избавила меня от долгов, и я смогла спокойно жить, работать без звонков коллекторов и
-              нервотрепки.
-            </p>
-            <a href='/profile/Marina_Ivanova'>Марина Иванова</a>
-          </div>
-        </div>
-
+        <input class='section-first_form_search-btn' type='submit' value='Поиск'>
 
       </div>
 
-      <div class='slide'>
+    </form>
 
-        <div class='review-card'>
-          <div class='review-card_head'>
-            <img src='./images/img.jpg' alt='img' />
-            <div class='review-card_head_text'>
-              <h3>Просто дали начать снова жить!</h3>
-            </div>
-          </div>
 
-          <div class='review-card_content'>
-            <p>Мне порекомендовала обратиться в компанию коллега еще год назад. Сначала даже не поверила, что избавиться
-              от
-              долгов можно так легко.
-              Решила даже позвонить в другие конторы, однако самым выгодным и адекватным вариантом стал тот, который
-              посоветовала знакомая.
-              Меня порадовала, что компания сама собирает пакет документов, оформляет все за считанные дни.
-              Фирма быстро избавила меня от долгов, и я смогла спокойно жить, работать без звонков коллекторов и
-              нервотрепки.
-            </p>
-            <a href='/profile/Marina_Ivanova'>Марина Иванова</a>
-          </div>
-        </div>
-
-        <div class='review-card'>
-          <div class='review-card_head'>
-            <img src='./images/img (2).jpg' alt='img' />
-            <div class='review-card_head_text'>
-              <h3>Проверенная фирма.</h3>
-            </div>
-          </div>
-
-          <div class='review-card_content'>
-            <p>Отвечаю за то, что говорю. Я сам успешно списал долги, а затем посоветовал знакомым, попавшим в тяжелую
-              жизненную ситуацию, тоже обратиться в эту же компанию. Помогли и мне, и моим друзьям. Естественно, как
-              камень с плеч!
-            </p>
-            <a href='/profile/Ivan_Ivanova'>Иван Иванов</a>
-          </div>
-        </div>
-
-        <div class='review-card'>
-          <div class='review-card_head'>
-            <img src='./images/img (1).jpg' alt='img' />
-            <div class='review-card_head_text'>
-              <h3>Всем советую!</h3>
-            </div>
-          </div>
-
-          <div class='review-card_content'>
-            <p>Спасибо большое компании по списанию долгов. Процедура прошла законно, прозрачно, легально. В свое время,
-              я
-              брал кредит на собственное дело, но бизнес не пошел и не поехал, а вот долги стали копиться моментально.
-              Естественно, что коллекторы и проблемы не заставили себя ждать. Поэтому и решил обратиться за
-              банкротством,
-              и затем был приятно удивлен, что мне быстро помогли с долгами.
-            </p>
-            <a href='/profile/Sergey_Ivanov'>Сергей Иванов</a>
-          </div>
-        </div>
-
-      </div>
- -->
-
-      </div>
+    <div class='section-first_image'>
+      <img src='./images/ic_check.png' alt='check'>
     </div>
 
-    <div class='map'>
-      <button class='btn btn_active'></button>
-      <button class='btn'></button>
-      <button class='btn'></button>
+  </section>
+
+  <section class='section-second'>
+
+    <div class='section-second_content'>
+
+      <h2 class='section-second_headline'>Заголовок</h2>
+
+      
+        <img src='./images/ic_searchForm.png' alt='search icon'>
+
+        <ul class='section-second_list '>
+          <h4>Пункты</h4>
+          <li>Пункт 1</li>
+          <li>Пункт 2</li>
+          <li>Пункт 3</li>
+        </ul>
+
     </div>
 
-  </div>
+  </section>
 
-  <script src='index.js'></script>
+  <script src='./components/Menu.js'></script>
 </body>
 
 </html>

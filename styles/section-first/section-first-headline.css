@@ -1,0 +1,25 @@
+.section-first_headline {
+  grid-area: head;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 16px;
+}
+
+.section-first_headline h1 {
+  font-style: normal;
+  font-weight: normal;
+  line-height: 50px;
+}
+
+.section-first_headline h2 {
+  font-style: normal;
+  font-weight: normal;
+  display: none;
+}
+
+.section-first_headline h3 {
+  font-style: normal;
+  font-weight: normal;
+  display: none;
+}

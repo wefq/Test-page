@@ -1,0 +1,80 @@
+@import './form.css';
+@import './section-first-headline.css';
+
+.section-first {
+  width: 1240px;
+  padding: 32px 0;
+  display: grid;
+  grid-template-areas:
+    'head img'
+    'form img';
+  grid-gap: 28px;
+}
+
+.section-first_image {
+  grid-area: img;
+  margin: auto 0 auto auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 314px;
+  height: 314px;
+  background-color: #02AEB0;
+}
+
+@media (max-width: 1240px) {
+  .section-first {
+    grid-template-areas:
+      'head'
+      'img'
+      'form';
+  }
+
+  .section-first_headline h1 {
+    display: none;
+  }
+
+  .section-first_headline h2 {
+    display: inline;
+  }
+
+  .section-first_image {
+    margin: auto;
+    margin-bottom: 0;
+  }
+
+  .section-first_form {
+    width: 480px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-first_form {
+    width: 320px;
+  }
+
+  .section-first_headline {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .section-first_headline h2 {
+    display: none;
+  }
+
+  .section-first_headline h3 {
+    display: inline;
+  }
+
+  .section-first_form_options {
+    grid-template-areas:
+      'check'
+      'switch'
+      'btn';
+      grid-gap: 24px;
+  }
+
+  .section-first_form_search-btn {
+    margin: 0;
+  }
+}

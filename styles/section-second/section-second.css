@@ -1,0 +1,66 @@
+.section-second {
+  background: linear-gradient(90deg, #02AAB0 0%, #00CDAC 100%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.section-second_content {
+  display: grid;
+  grid-template-areas:
+    'head head'
+    'img list';
+  grid-gap: 52px;
+  padding: 112px 311px;
+  width: 1240px;
+}
+
+.section-second_headline {
+  color: #FAFAFA;
+  font-weight: 400;
+  grid-area: head;
+}
+
+.section-second_headline::after {
+  content: '';
+  display: block;
+  margin-top: 4px;
+  width: 65px;
+  height: 2px;
+  background-color: #D1D7DC;
+}
+
+.section-second_list {
+  color: #FAFAFA;
+  list-style: inside url('../../images/ic_list_check.svg');
+  grid-area: list;
+}
+
+.section-second_list h4 {
+  font-weight: 400;
+  margin-bottom: 32px;
+}
+
+.section-second_list img{
+grid-area: img;
+}
+
+@media (max-width: 1240px) {
+  .section-second_content{
+    grid-template-areas: 
+    'head'
+    'list'
+    'img';
+    padding: 64px 0;
+  }
+
+  .section-second_list h4{
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-second_content{
+    padding: 64px 16px;
+  }
+}

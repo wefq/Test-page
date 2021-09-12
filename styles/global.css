@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;400&display=swap');
+@import './links.css';
+@import './header/header.css';
+@import './slider.css';
+@import './section-first/section-first.css';
+@import './section-second/section-second.css';
+
+:root {
+  font-family: 'Jost', sans-serif;
+  color: #454F5B;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  background-color: #EEF1F4;
+}
+
+h1 {
+  font-size: 44px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 15px;
+}
+
+@media (max-width: 1240px) {
+  body {
+    max-width: 600px;
+  }
+
+  header {
+    width: 480px;
+    height: 64px;
+  }
+
+  .section-first {
+    width: 480px;
+  }
+
+  .section-second_content {
+    width: 480px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    min-width: 320px;
+  }
+
+  header {
+    width: 320px;
+  }
+
+  .section-first {
+    width: 320px;
+  }
+
+  .section-second_content {
+    width: 320px;
+  }
+}

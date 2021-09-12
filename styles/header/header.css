@@ -1,0 +1,57 @@
+@import './drop-menu.css';
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 85px;
+  width: 1240px;
+
+  border-bottom: 1px solid #D1D7DC;
+}
+
+.headline::after {
+  content: '';
+  display: inline-block;
+  width: 80px;
+  height: 2px;
+  background-color: #3951D2;
+}
+
+header img {
+  width: 40px;
+  height: 40px;
+}
+
+.default-menu {
+  display: flex;
+  grid-gap: 75px;
+}
+
+.logo {
+  font-weight: normal;
+  color: #02AEB0;
+}
+
+.profile {
+  display: flex;
+  grid-gap: 17px;
+  align-items: center;
+}
+
+@media (max-width: 1240px) {
+  .default-menu {
+    display: none;
+  }
+
+  .default-menu_part {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  header .link__contacts__phone {
+    display: none
+  }
+}

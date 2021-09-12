@@ -1,0 +1,73 @@
+/* .nav-link {
+  text-decoration: none;
+  color: inherit;
+} */
+
+/* .profile_number {
+  text-decoration: none;
+  color: inherit;
+}
+
+.profile_number:hover {
+  color: #02AEB0;
+  font-weight: 600;
+  font-size: 14px;
+} */
+
+/* .nav-link:hover {
+  color: #02AEB0;
+  font-weight: 600;
+  transform: scale(calc(14*100/15/100));
+} */
+
+
+.link {
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+}
+
+.link:hover{
+  color: #02AEB0;
+  transform: scale(calc(14*100/15/100));
+}
+
+.link_big {
+  font-size: 44px;
+}
+
+.link_active {
+  color: #02AEB0;
+  transform: scale(calc(14*100/15/100));
+}
+
+.link_header {
+  font-size: 15px;
+}
+
+.link_footer {
+  font-size: 18px;
+}
+
+.link__navigation {
+  color: #6A7C92;
+  font-size: 15px;
+}
+
+.link__navigation__anchor {}
+
+.link__navigation__base {
+  color: #454F5B;
+}
+
+.link__contacts {
+  color: #454F5B;
+}
+
+.link__contacts__external {
+  width: 33px;
+  height: 33px;
+}
+
+.link__contacts__phone {}
+
+.link__contacts__mail {}

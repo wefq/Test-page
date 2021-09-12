@@ -1,0 +1,55 @@
+@import './switch.css';
+@import './check.css';
+
+.section-first_form {
+  width: 606px;
+  padding: 20px 15px;
+  background: #F6F6F6;
+  grid-area: form;
+}
+
+.region {
+  width: 100%;
+  height: 46px;
+  border: 1px solid #A2B6C8;
+  border-radius: 2px;
+  padding: 12px 4px;
+  font-size: 15px;
+  font-family: inherit;
+  color: #454F5B;
+}
+
+.section-first_form_search-btn {
+  background: #02AEB0;
+  color: #FAFAFA;
+  border: none;
+  border-radius: 2px;
+  font-family: inherit;
+  font-size: 18px;
+  padding: 8px 20px;
+  width: 90px;
+  height: 48px;
+  cursor: pointer;
+  margin: auto 0 0 auto;
+}
+
+.section-first_form_options {
+  display: grid;
+  grid-template-areas:
+    'check switch btn'
+    'check switch btn';
+}
+
+.checkboxes {
+  grid-area: check;
+  display: grid;
+  grid-gap: 16px;
+}
+
+.section-first_form_options .switch {
+  grid-area: switch;
+}
+
+.section-first_form_search-btn {
+  grid-area: btn;
+}
