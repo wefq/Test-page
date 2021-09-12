@@ -10,6 +10,9 @@
 
   display: flex;
   justify-content: center;
+  
+  height: 460px;
+  
   position: relative;
   overflow: hidden;
 }
@@ -17,6 +20,7 @@
 .slider {
   display: flex;
   grid-gap: 30px;
+  
   height: 100%;
   position: relative;
   transition: transform 500ms ease-in;
@@ -63,7 +67,6 @@
   display: grid;
   grid-template-areas: 'btn btn btn';
   grid-gap: 42px;
-
   width: 144px;
   margin-left: auto;
   margin-right: auto;
