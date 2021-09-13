@@ -1,0 +1,27 @@
+.h1 {
+  line-height: 50px;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: normal;
+}
+
+h2 {
+  line-height: 46px;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: normal;
+}
+
+h3 {
+  line-height: 30px;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+h4 {
+  line-height: 29px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+}

@@ -17,7 +17,6 @@
 
 .section-second_headline {
   color: #FAFAFA;
-  font-weight: 400;
   grid-area: head;
 }
 
@@ -27,7 +26,7 @@
   margin-top: 4px;
   width: 65px;
   height: 2px;
-  background-color: #D1D7DC;
+  background-color: #FAFAFA;
 }
 
 .section-second_list {
@@ -37,30 +36,33 @@
 }
 
 .section-second_list h4 {
-  font-weight: 400;
   margin-bottom: 32px;
 }
 
-.section-second_list img{
-grid-area: img;
+.section-second_list img {
+  grid-area: img;
 }
 
 @media (max-width: 1240px) {
-  .section-second_content{
-    grid-template-areas: 
-    'head'
-    'list'
-    'img';
+  .section-second_content {
+    grid-template-areas:
+      'head'
+      'list'
+      'img';
     padding: 64px 0;
   }
 
-  .section-second_list h4{
+  .section-second_list h4 {
     display: none;
+  }
+
+  .section-second_list img {
+    width: 224px;
   }
 }
 
 @media (max-width: 480px) {
-  .section-second_content{
+  .section-second_content {
     padding: 64px 16px;
   }
 }

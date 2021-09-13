@@ -1,0 +1,44 @@
+.link {
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+}
+
+.link:hover{
+  color: #02AEB0;
+  transform: scale(calc(14*100/15/100));
+}
+
+.link_big {
+  font-size: 44px;
+}
+
+.link_header {
+  font-size: 15px;
+}
+
+.link_footer {
+  font-size: 15px;
+}
+
+.link__navigation {
+  color: #6A7C92;
+  font-size: 15px;
+}
+
+.link__navigation__base {
+  color: #454F5B;
+}
+
+.link__contacts {
+  color: #454F5B;
+}
+
+.link__contacts__external {
+  width: 33px;
+  height: 33px;
+  cursor: pointer;
+}
+
+.link__contacts__mail {
+  color: #02AEB0
+}

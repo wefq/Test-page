@@ -12,6 +12,12 @@ const setSlidePostition = (slide, index) => {
 
 slides.forEach(setSlidePostition)
 
+// const moveToSlide = (slider, currentSlide, targetSlide) => {
+//   slider.style.transform = 'translateX(-' + targetSlide.style.left + ')';
+//   currentSlide.classList.remove('current-slide');
+//   targetSlide.classList.add('current-slide')
+// }
+
 btnsMap.addEventListener('click', e=>{
   const targetBtn = e.target.closest('button');
 

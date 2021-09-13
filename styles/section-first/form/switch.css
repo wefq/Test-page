@@ -10,11 +10,10 @@
   opacity: 0;
   width: 0;
   height: 0;
-  
 }
 
 .switch_toggle {
-  
+
   position: absolute;
   cursor: pointer;
   top: 0;

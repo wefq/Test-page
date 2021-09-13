@@ -1,4 +1,4 @@
-@import './form.css';
+@import './form/form.css';
 @import './section-first-headline.css';
 
 .section-first {
@@ -9,6 +9,10 @@
     'head img'
     'form img';
   grid-gap: 28px;
+}
+
+.section-first_headline p {
+  color: #6A7C92;
 }
 
 .section-first_image {
@@ -71,7 +75,7 @@
       'check'
       'switch'
       'btn';
-      grid-gap: 24px;
+    grid-gap: 24px;
   }
 
   .section-first_form_search-btn {

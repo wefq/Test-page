@@ -1,0 +1,53 @@
+.reviews_headline::after {
+  content: '';
+  display: inline-block;
+  width: 80px;
+  height: 2px;
+  background-color: #02AEB0;
+  ;
+}
+
+.reviews {
+  display: grid;
+  grid-gap: 48px;
+  width: 1240px;
+  overflow: hidden;
+}
+
+.slider {
+  height: 460px;
+  display: flex;
+  justify-content: center;
+  transition: transform 500ms ease-in;
+  position: relative;
+}
+
+.slide {
+  position: absolute;
+  height: 100%;
+}
+
+.slide .sub-two {
+  color: #A2B6C8;
+}
+
+.map {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  width: 20px;
+  height: 20px;
+  border: 3px solid #D1D7DC;
+  border-radius: 50%;
+  margin-left: 42px;
+  cursor: pointer;
+}
+
+.btn_active {
+  background: #02AEB0;
+  ;
+  border: 1px solid #02AEB0;
+  ;
+}

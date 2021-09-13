@@ -1,0 +1,39 @@
+.section-third_cards {
+  display: flex;
+  grid-gap: 30px;
+}
+
+.card {
+  box-shadow: 0px 20px 60px rgba(59, 61, 72, 0.1);
+  width: 394px;
+  height: 100%;
+}
+
+.card h4{
+  display: none;
+}
+
+.card_head {
+  display: flex;
+  align-items: center;
+  grid-gap: 16px;
+  background: #EEF1F4;
+}
+
+.card_img {
+  width: 120px;
+  height: 120px;
+  background: #02AEB0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card_content {
+  background: #FAFAFA;
+  padding: 24px 16px;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
