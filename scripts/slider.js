@@ -12,7 +12,7 @@ export const Slider = () => {
 
     autoHeight: true,
 
-    spaceBetween: 60,
+    spaceBetween: 30,
 
     slidesPerView: 3,
     slidesPerGroup: 3,
@@ -21,16 +21,16 @@ export const Slider = () => {
       320: {
         slidesPerView: 1,
         slidesPerGroup: 1,
-      },
-      1240: {
-        slidesPerView: 3,
-        slidesPerGroup: 3,
-        spaceBetween: 30,
+        spaceBetween: 0,
       },
       480: {
         slidesPerView: 2,
         slidesPerGroup: 2,
-        spaceBetween: 30,
+       
+      },
+      1240: {
+        slidesPerView: 3,
+        slidesPerGroup: 3,
       },
     }
   });

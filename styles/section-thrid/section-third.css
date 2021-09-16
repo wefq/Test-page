@@ -12,16 +12,9 @@
 .section-third_content {
   width: 1240px;
   padding: 96px 0;
-  display: grid;
-  grid-template:
-    'head'
-    'mid'
-    'reviews';
-  grid-gap: 60px;
-}
-
-.section-third__head {
-  grid-area: head;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
 }
 
 .section-third__head h2::after {
@@ -34,7 +27,6 @@
 }
 
 .section-third__middle {
-  grid-area: mid;
   text-align: center;
   width: 820px;
   margin: 0 auto;
@@ -49,7 +41,6 @@
 }
 
 .section-third__reviews {
-  grid-area: reviews;
   display: grid;
   grid-gap: 28px;
 }
@@ -82,7 +73,6 @@
 
   .section-third_cards {
     width: 320px;
-  
   }
 
   .section-third_head {
