@@ -1,39 +1,37 @@
-const slider = document.querySelector('.slider')
-const slides = Array.from(slider.children)
+export const Slider = () => {
+  let swiper = {}
+  return swiper = new Swiper('.swiper', {
+    loop: true,
 
-const btnsMap = document.querySelector('.map')
-const btns = Array.from(btnsMap.children)
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true
+    },
 
-const slideWidth = slides[0].getBoundingClientRect().width
+    speed: 500,
 
-const setSlidePostition = (slide, index) => {
-  slide.style.left = slideWidth * index + 'px';
+    autoHeight: true,
+
+    spaceBetween: 60,
+
+    slidesPerView: 3,
+    slidesPerGroup: 3,
+
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+      },
+      1240: {
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+        spaceBetween: 30,
+      },
+      480: {
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+        spaceBetween: 30,
+      },
+    }
+  });
 }
-
-slides.forEach(setSlidePostition)
-
-// const moveToSlide = (slider, currentSlide, targetSlide) => {
-//   slider.style.transform = 'translateX(-' + targetSlide.style.left + ')';
-//   currentSlide.classList.remove('current-slide');
-//   targetSlide.classList.add('current-slide')
-// }
-
-btnsMap.addEventListener('click', e=>{
-  const targetBtn = e.target.closest('button');
-
-  if (!targetBtn) return
-
-  const currentSlide = slider.querySelector('.current-slide')
-  const currentBtn = btnsMap.querySelector('.btn_active')
-
-  const targetIndex = btns.findIndex(btn => btn === targetBtn)
-  const targetSlide = slides[targetIndex]
-
-
-  slider.style.transform = 'translateX(-' + targetSlide.style.left + ')';
-  currentSlide.classList.remove('current-slide');
-  targetSlide.classList.add('current-slide')
-
-  currentBtn.classList.remove('btn_active')
-  targetBtn.classList.add('btn_active')
-})
